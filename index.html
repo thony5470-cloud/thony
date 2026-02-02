@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Electricista Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome para íconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="card fade-scroll"> <!-- Botón WhatsApp flotante -->
+<a href="https://wa.me/18043689968?text=Hola,%20soy%20de%20Richmond%20y%20necesito%20un%20electricista" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+</a>
+
+        <img src="logo.png/WhatsApp Image 2026-02-01 at 5.21.45 PM.jpeg" alt="Logo Electricista" class="logo">
+
+        <h1 class="fade-in"> thony ,Electricista Profesional</h1>
+        <p class="subtitle fade-in">Instalaciones
+             • Reparaciones  • Emergencias</p>
+<p class="location fade-in">📍 Richmond, VA</p>
+<p class="location fade-in">⏰ Lunes a Domingo – 24 horas</p>
+
+        <div class="services fade-scroll">
+            <h2>Servicios</h2>
+
+            <ul>
+    <li class="fade-in">⚡ Instalaciones eléctricas</li>
+    <li class="fade-in">🔧 Reparación de cortos</li>
+    <li class="fade-in">🏠 Casas y apartamentos</li>
+    <li class="fade-in">🏭 Trabajo industrial</li>
+    <li class="fade-in">🚨 Emergencias 24/7</li>
+</ul>
+
+     
+
+    <footer>
+        © 2026 Electricista Profesional
+    </footer>
+<script>
+    const faders = document.querySelectorAll('.fade-scroll');
+
+    const appearOnScroll = () => {
+        faders.forEach(fader => {
+            const top = fader.getBoundingClientRect().top;
+            const screen = window.innerHeight;
+
+            if(top < screen - 50){
+                fader.classList.add('show');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', appearOnScroll);
+    window.addEventListener('load', appearOnScroll);
+</script>
+
+</body>
+</html>
+>
